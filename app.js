@@ -21,7 +21,11 @@ function generatePassword(){
     }
 
     passwordEl.value = password;
+}
 
+function copyPassword(){
+    passwordEl.select();
+    document.execCommand('copy');
 }
 
 
